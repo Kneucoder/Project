@@ -163,7 +163,7 @@
 }
 .text-container {
     filter: none;
-    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    text-shadow: 2px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     font-family: 'Courier New', Courier;
     opacity: 10.0;
     font-weight: bold;
@@ -181,15 +181,19 @@
     border: 2px solid #8BA;
     padding: 20px;
     display: flex;
-   
+    justify-content: center;
+    align-items: center;
+
 }
-.flexbox-item-1 {
+.flexbox-item-1{
     min-height: 150px;
     flex-shrink: 0;
     background-image: url(calendar-svgrepo-com.jpg);
     background-size: cover;
     background-position: top calc(75%-20px);
     text-shadow: #ffffff;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
 }
 .flexbox-item-2 {
     min-height: 150px;
@@ -197,6 +201,7 @@
     background-image: url(school-svgrepo-com.jpg);
     background-size: cover;
     background-position: top;
+    cursor: pointer;
 }
 .flexbox-item-3{
     min-height: 150px;
@@ -204,6 +209,7 @@
     background-image: url(question-and-answer-svgrepo-com.jpg);
     background-size: cover;
     background-position: top calc(75%-20px); 
+    cursor: pointer;
 }
 .flexbox-item-4 {
     min-height: 150px;
@@ -211,6 +217,79 @@
     background-image: url(writing-svgrepo-com.jpg);
     background-size: cover;
     background-position: top calc(75%-20px);
+    cursor: pointer;
+}
+.additional-text{
+    color: transparent;
+    display: none;
+    
+}
+.additional-text:hover:after{
+    display: inline;
+}
+
+.flexbox-item-1:hover {
+    display: inline;
+    width: 40%;
+    height: 30%;
+    backdrop-filter: blur(90%);
+   transition: opacity 0.3s ease-in-out;
+   border: 4px solid #000;
+   opacity: 0.9;
+
+}
+.flexbox-item-1:hover .additional-text {
+    color: rgb(255, 0, 0); 
+    display: inline;
+    font-weight: bold;
+}
+
+.flexbox-item-2:hover {
+    display: inline;
+    width: 40%;
+    height: 30%;
+    backdrop-filter: blur(90%);
+   transition: opacity 0.3s ease-in-out;
+   border: 4px solid #000;
+   opacity: 0.9;
+
+}
+.flexbox-item-2:hover .additional-text {
+    color: rgb(255, 0, 0); 
+    display: inline;
+    font-weight: bold;
+}
+
+.flexbox-item-3:hover {
+    display: inline;
+    width: 40%;
+    height: 30%;
+    backdrop-filter: blur(90%);
+   transition: opacity 0.3s ease-in-out;
+   border: 4px solid #000;
+   opacity: 0.9;
+
+}
+.flexbox-item-3:hover .additional-text {
+    color: rgb(255, 0, 0); 
+    display: inline;
+    font-weight: bold;
+}
+
+.flexbox-item-4:hover {
+    display: inline;
+    width: 40%;
+    height: 30%;
+    backdrop-filter: blur(90%);
+   transition: opacity 0.3s ease-in-out;
+   border: 4px solid #000;
+   opacity: 0.9;
+
+}
+.flexbox-item-4:hover .additional-text {
+    color: rgb(255, 0, 0); 
+    display: inline;
+    font-weight: bold;
 }
 
 /* Global Styles */

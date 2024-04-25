@@ -11,6 +11,8 @@ function highlightWords() {
   }
 }
 
+
+
 const interval = setInterval(highlightWords, 1000); // Change the interval duration as needed
 document.addEventListener("DOMContentLoaded", function() {
   var cookieConsentPopup = document.getElementById('cookie-consent-popup');
