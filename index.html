@@ -102,7 +102,7 @@
         height: 100%;
       }
     </style>
-    <video class="background-video" autoplay  muted playsinline id="BgVideo" playbackRate="1.0"> <source src="bdc2-e338-4a33-91d0-39f37df250d6.mp4" type="video/mp4" > This video is not supported on your website</video>
+    <video class="background-video" autoplay loop muted playsinline id="BgVideo" playbackRate="1.0"> <source src="bdc2-e338-4a33-91d0-39f37df250d6.mp4" type="video/mp4" > This video is not supported on your website</video>
     <script>
         document.addEventListener('DOMContentLoaded', function() { var video = document.getElementById('BgVideo'); if(video) { video.addEventListener('canplay', function() { video.playbackRate = 1.09; }); } else { console.error('Video element not found'); } });
     </script>
