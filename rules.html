@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PROJECT - EsSAT</title>
+    <link rel="stylesheet" href="styles-pr.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body style="scroll-behavior: smooth; overflow-x: hidden; background-color: rgb(0, 0, 0);">
+<header>
+    <div class="container">
+        <img class="rotating-svg" width="50px" height="50px" viewBox = "0 0 100 100" style="filter: invert(100%) sepia(5%) hue-rotate(25deg) saturate(10000%); margin-left: 10px; margin-right: 10px; z-index: 3; position: absolute; left: 0; display: flex;  " src="circle-svgrepo-com.svg" alt="circle-empty">
+        <img width="50px" height="50px" viewBox = "0 0 100 100" style="filter: invert(10%) ; margin-left: 10px; margin-right: 10px; z-index: 3; position: absolute; left: 0; display: flex; " src="empty-circle-svgrepo-com.svg" alt="circle-empty">
+        <h1 class= "title" ><span style="text-shadow: 0 0 10px rgb(128, 128, 128);">Es</span><span style="text-shadow: 0 0 10px rgb(238, 255, 0); color:rgb(234, 255, 0); opacity: .9;  " class="pulsating-light"> SAT </span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li> <!--adding experience here to would also be good inshallah-->
+                <li><a href="about.html">ABOUT</a></li> <!--visions, values, experience+ inshallah-->
+                <li><a href="join.html">SERVICES</a></li> <!--This should include the contact form and what else from the contact page inshallah-->
+                <li><a href="run.html">TEAM</a></li>
+                <li><a href="rules.html">POLICY</a></li>
+                <!-- Add other navigation links with their respective section IDs -->
+            </ul>      
+        </nav>
+    </div>
+    
+    <div class="roll-out">
+        <div class="scroll-bar" id="scroll-bar"></div>
+      </div>
+</header>
+<main>
+  <style>
+    body {
+    
+     
+       
+        color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        position: center;
+    }
+    .circle {
+        position: absolute;
+        top: 0px;
+        width: 90px;
+        height: 50px;
+        background-color: rgba(162, 222, 41, 0.7);
+        border-radius: 55%;
+        animation: fall linear infinite;
+        z-index: -1;
+    }
+    .circle0 {
+        left: 1%;
+        animation-duration: 20s;
+    }
+    .circle1 {
+        left: 10%;
+        animation-duration: 44s;
+    }
+    .circle2 {
+        left: 30%;
+        animation-duration: 36s;
+    }
+    .circle3 {
+        left: 50%;
+        animation-duration: 25s;
+    }
+    .circle4 {
+        left: 70%;
+        animation-duration: 47s;
+    }
+    .circle5 {
+        left: 85%;
+        animation-duration: 53s;
+    }
+    @keyframes fall {
+        0% {
+            transform: translateY();
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(300vh);
+            opacity: 0.5;
+        }
+    }
+</style>
+
+<div class="circle circle0" style="display: flex; font-family: 'Times New Roman', Times, serif; font-weight: bold;">AP Lit</div>
+<div class="circle circle1" style="display: flex; font-family: 'Times New Roman', Times, serif; font-weight: bold;">Algebra</div>
+<div class="circle circle2" style="display: flex;font-family: 'Times New Roman', Times, serif; font-weight: bold;">Anatomy</div>
+<div class="circle circle3" style="display: flex;font-family: 'Times New Roman', Times, serif; font-weight: bold;">AP Calc AB</div>
+<div class="circle circle4" style="display: flex;font-family: 'Times New Roman', Times, serif; font-weight: bold;">AP Lang</div>
+<div class="circle circle5" style="display: flex;font-family: 'Times New Roman', Times, serif; font-weight: bold;">+More</div>
+<div class="content">
+    <h2 style="background-color: rgba(222, 190, 45, 0.6);border-radius: 7px;padding: 2px; margin-left: 80px; margin-right: 80px; ">REACH OUT</h2>
+          <p style="margin-right: 50px; background-color: rgba(188, 174, 46, 0.819); border-radius: 30px; font-size: 25px; margin-left: 50px; margin-top: 30px; padding: 20px; font-family: 'Times New Roman';
+          text-shadow:  -1px -1px 0 #000000,  
+          1px -1px 0 #000000,
+         -1px  1px 0 #000000,
+          1px  1px 0 #000000;;
+        ">Looking forward to resolve your inquiries and questions. Additionally, if you have a more urgent request please text <strong>"HELP"</strong> to 773-413-9774. The Head of the organization values your participation and contribution.</center></p>
+          <br> <ul style="text-shadow:  -1px -1px 0 #fdfdfd,  
+          1px -1px 0 #ffffff,
+         -1px  1px 0 #ffffff,
+          1px  1px 0 #fafafa; font-size: 20px;"> <center> <Strong>
+            <li>Questions</li>
+            <li>Concerns</li>
+            <li>Circumstances
+            </li>
+            <li>Details</li>
+            <li>Help</li>
+            <li>Feedback</li>
+            <li>Rescheduling
+            </li> </Strong> </center> 
+          </ul>
+          <img width="90px" height="100px" style="filter: invert(100%);" src="empty-circle-svgrepo-com.svg" alt="circle-empty">          
+    <!-- <form id="contact-form">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br>
+      
+      <input type="submit" value="Submit">
+    </form> -->
+    <div id="response"></div> 
+    
+    <script src="script.js"></script>
+    
+    <form
+action="https://formspree.io/f/xnqelbvd"
+method="POST"
+>
+<label>
+  Email:
+  <input type="email" name="email" required>
+</label>
+<label>
+  Please type your message:
+  <textarea name="message"></textarea>
+</label>
+<!-- your other form fields go here -->
+<button type="submit" style="color: black;">Send</button>
+</form>
+<img width="90px" height="100px" style="filter: invert(100%);" src="empty-circle-svgrepo-com.svg" alt="circle-empty">
+    </body>
+    </html>
+      <div class="terms-box">
+       <div class="terms-text">
+          <div class="custom-scroll-box">
+              <article class="custom-box-content">
+                  <div class="accordion">
+                      <h1 class="accordion-btn">Terms of Service</h1><br>
+                      <div class="accordion-content">
+                        <ol>
+                          <li>
+                              <h3>Acceptance of Terms</h3>
+                              <p>By accessing or using the services provided by Project - EsSAT (“Service”), you agree to be bound by these Terms of Service (“Terms”). If you do not agree with any part of these Terms, you must not use the Service.</p>
+                          </li>
+                          <li>
+                              <h3>Use of the Service</h3>
+                              <p>Eligibility</p>
+                              <p>The Service is intended for use by students in third to ninth grade and their parents or guardians. If you are under the age of 13, you may not use the Service without verifiable parental consent as required by the Children’s Online Privacy Protection Act (COPPA). We do not knowingly collect personal information from children under the age of 13 without obtaining verifiable parental consent.</p>
+                              <p>Account Registration</p>
+                              <p>To access certain features of the Service, you may be required to register for an account. You agree to:</p>
+                              <ul>
+                                  <li>Provide accurate, current, and complete information during the registration process.</li>
+                                  <li>Maintain and promptly update your account information to keep it accurate, current, and complete.</li>
+                                  <li>Maintain the security of your password and accept all risks of unauthorized access to your account and the information you provide.</li>
+                              </ul>
+                              <p>Prohibited Conduct</p>
+                              <p>You agree not to:</p>
+                              <ul>
+                                  <li>Use the Service for any illegal purpose or in violation of any local, state, national, or international law.</li>
+                                  <li>Violate or encourage others to violate the rights of third parties, including intellectual property rights.</li>
+                                  <li>Post, upload, or distribute any content that is unlawful, defamatory, abusive, harassing, threatening, or otherwise objectionable.</li>
+                                  <li>Interfere with the operation of the Service or any user’s enjoyment of the Service, including by uploading or otherwise disseminating viruses, adware, spyware, worms, or other malicious code.</li>
+                                  <li>Attempt to gain unauthorized access to the Service, other user accounts, or computer systems or networks connected to the Service.</li>
+                              </ul>
+                          </li>
+                          <li>
+                              <h3>Intellectual Property Rights</h3>
+                              <p>All content on the Service, including text, graphics, logos, and other materials, is the property of Project - EsSAT and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or create derivative works from this content without our express written permission.</p>
+                          </li>
+                          <li>
+                              <h3>Homework Content Images</h3>
+                              <p>Project - EsSAT reserves the right to refuse any content containing images that show the opposite gender or anything deemed inappropriate according to Islamic principles. Content that violates these guidelines will be rejected.</p>
+                          </li>
+                          <li>
+                              <h3>Payment and Refunds</h3>
+                              <p>Payment Terms</p>
+                              <p>All payments for the Service must be made in accordance with our payment terms and policies.</p>
+                              <p>Refund Policy</p>
+                              <p>Refunds are available under specific circumstances, such as:</p>
+                              <ul>
+                                  <li>Technical issues that prevent access to the Service for an extended period.</li>
+                                  <li>Service not provided as described.</li>
+                                  <li>Errors in billing or payment processing.</li>
+                              </ul>
+                              <p>To request a refund, please contact us at [contact email] with details of your issue. We will evaluate your request and provide a response within 14 business days.</p>
+                          </li>
+                          <li>
+                              <h3>Data Security</h3>
+                              <p>We take the security of your personal information seriously and implement appropriate technical and organizational measures to protect it against unauthorized access, loss, or misuse. However, we cannot guarantee absolute security, and you acknowledge that you provide your personal information at your own risk.</p>
+                          </li>
+                          <li>
+                              <h3>Termination</h3>
+                              <p>We reserve the right to terminate or suspend your access to the Service at our sole discretion, without notice, for conduct that we believe violates these Terms or is harmful to other users of the Service, us, or third parties, or for any other reason.</p>
+                          </li>
+                          <li>
+                              <h3>Dispute Resolution</h3>
+                              <p>Negotiation</p>
+                              <p>Any disputes arising out of or in connection with these Terms or the Service shall first be attempted to be resolved through good faith negotiations.</p>
+                              <p>Mediation and Arbitration</p>
+                              <p>If a dispute cannot be resolved amicably, it shall be submitted to binding arbitration in accordance with the rules of the [Arbitration Institution]. Judgment on the award rendered by the arbitrator may be entered in any court having jurisdiction. Both parties agree to waive their rights to litigation and trial by jury, opting instead for arbitration or mediation to resolve disputes.</p>
+                              <p>Waiver of Class Actions</p>
+                              <p>You agree to resolve disputes with Project - EsSAT on an individual basis. You waive your right to participate in a class action lawsuit or class-wide arbitration.</p>
+                          </li>
+                          <li>
+                              <h3>Disclaimer of Warranties</h3>
+                              <p>The Service is provided on an “as is” and “as available” basis. Project - EsSAT makes no warranties, expressed or implied, regarding the Service, including but not limited to, implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+                          </li>
+                          <li>
+                              <h3>Limitation of Liability</h3>
+                              <p>To the fullest extent permitted by applicable law, Project - EsSAT shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to, loss of data, use, or other economic advantage, arising out of or in connection with the use or performance of the Service, any failure to comply with COPPA, data security measures, or other applicable laws and regulations.</p>
+                          </li>
+                          <li>
+                              <h3>Organization Policy</h3>
+                              <p><strong>Organization Policy</strong></p>
+                              <p><strong>Gender-Segregated Sections</strong></p>
+                              <p>Project - EsSAT is committed to respecting and upholding the religious values that define our organization. In alignment with these values, we implement gender-segregated sections for all in-person tutoring sessions. This policy is designed to foster a respectful, focused, and effective learning environment. Separate classrooms for biologically male and biologically female students will ensure that all students receive the same high-quality instruction and support.</p>
+                              <p>A study by Harvard University has shown the benefits of gender-segregated settings in enhancing students’ focus and academic performance. This further supports our policy of maintaining separate classrooms.</p>
+                              <p><strong>Non-Discrimination</strong></p>
+                              <p>While maintaining our religious values, Project - EsSAT is dedicated to providing an inclusive and respectful environment for all students, regardless of race, color, national origin, or disability. We comply with all applicable anti-discrimination laws and regulations.</p>
+                              <p><strong>Rights Related to Religious Organizations</strong></p>
+                              <p>Project - EsSAT operates under the protections afforded by the First Amendment of the United States Constitution, which guarantees the right to freedom of religion. This includes the right to establish policies and practices in alignment with our religious beliefs, including gender-segregated educational settings. We respect and uphold these rights to ensure that our organization operates in accordance with our religious values and principles.</p>
+                          </li>
+                          <li>
+                              <h3>Privacy and Data Protection</h3>
+                              <p>Project - EsSAT is committed to protecting the privacy of our users. We comply with COPPA and other relevant privacy regulations. We do not collect personal information from children under 13 without verifiable parental consent. For more details, please refer to our Privacy Policy.</p>
+                          </li>
+                          <li>
+                              <h3>Indemnification</h3>
+                              <p>You agree to indemnify, defend, and hold harmless Project - EsSAT, its affiliates, officers, directors, employees, and agents, from and against any and all claims, liabilities, damages, losses, or expenses, including reasonable attorneys’ fees and costs, arising out of or in any way connected with your access to or use of the Service, your violation of these Terms, or your violation of any rights of another. Disputes with our organization can be held from the seller of the service to the client and receiver of the service. </p>
+                          </li>
+                          <li>
+                              <h3>Complete Agreement</h3>
+                              <p>These Terms and any other policies or operating rules posted by us on the Service constitute the entire agreement and understanding between you and Project - EsSAT. This agreement supersedes any prior or contemporaneous agreements, communications, and proposals, whether oral or written, between you and Project - EsSAT.</p>
+                          </li>
+                          <li>
+                              <h3>Miscellaneous</h3>
+                              <h4>Entire Agreement</h4>
+                              <p>These Terms constitute the entire agreement between you and Project - EsSAT with respect to the Service and supersede all prior or contemporaneous understandings and agreements, whether written or oral, with respect to the Service.</p>
+                              <h4>Severability</h4>
+                              <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions of these Terms will remain in full force and effect.</p>
+                              <h4>Waiver</h4>
+                              <p>No waiver of any term or condition of these Terms shall be deemed a further or continuing waiver of such term or condition or any other term or condition, and any failure to assert a right or provision under these Terms shall not constitute a waiver of such right or provision.</p>
+                          </li>
+                          <li>
+                              <h3>Changes to the Terms of Service</h3>
+                              <p>Project - EsSAT reserves the right to modify these Terms at any time. Any changes will be effective immediately upon posting on our website. Your continued use of the Service after any changes to the Terms signifies your acceptance of the updated Terms.</p>
+                          </li>
+                          <li>
+                              <h3>Contact Us</h3>
+                              <p>If you have any questions about these Terms of Service, our compliance with COPPA, or other relevant regulations, please contact us at pulsargigw@gmail.com</p>
+                          </li>
+                      </ol>
+                        </ol>
+                      </div>
+                    </div>
+              </article>
+            </div>
+            <img width="90px" height="100px" style="filter: invert(100%);" src="empty-circle-svgrepo-com.svg" alt="circle-empty">
+            <div style="justify-content:center;"  class="custom-scroll-box">
+              <article class="custom-box-content">
+                  <div class="accordion">
+                      <h1 class="accordion-btn">Privacy Policy</h1><br>
+                      <div class="accordion-content">
+                        <ol>
+                          <li>
+                            <h3>Introduction</h3>
+                            <p>Welcome to Project - EsSAT (the "Service"). This Privacy Policy explains how we collect, use, and disclose information through our Service.</p>
+                          </li>
+                          <ol>
+                            <li>
+                                <h3>Privacy Policy</h3>
+                                <p>Welcome to Project - EsSAT (“Service”). This Privacy Policy explains how we collect, use, and disclose information through our Service.</p>
+                            </li>
+                            <li>
+                                <h3>Information We Collect</h3>
+                                <p>Personal Information: We may collect personal information such as name, email address, phone number, educational background, and any other information you choose to provide.</p>
+                                <p>Usage Data: We may collect information on how you interact with our Service, such as pages visited and actions taken.</p>
+                            </li>
+                            <li>
+                                <h3>How We Use Your Information</h3>
+                                <p>Provide and maintain our Service.</p>
+                                <p>Personalize your experience.</p>
+                                <p>Communicate with you.</p>
+                            </li>
+                            <li>
+                                <h3>Information Sharing and Disclosure</h3>
+                                <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent.</p>
+                            </li>
+                            <li>
+                                <h3>Your Choices</h3>
+                                <p>You can opt-out of certain data collection and processing by adjusting your browser settings or contacting us directly.</p>
+                            </li>
+                            <li>
+                                <h3>Cookies</h3>
+                                <p>We may use cookies and similar tracking technologies to improve the functionality of our Service and enhance your user experience.</p>
+                            </li>
+                            <li>
+                                <h3>Data Security</h3>
+                                <p>We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction.</p>
+                            </li>
+                            <li>
+                                <h3>Children’s Privacy</h3>
+                                <p>Our Service is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us.</p>
+                            </li>
+                            <li>
+                                <h3>Updates to This Policy</h3>
+                                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+                            </li>
+                            <li>
+                                <h3>Contact Us</h3>
+                                <p>If you have any questions about this Privacy Policy, please contact us at [contact email].</p>
+                            </li>
+                            <li>
+                                <h3>Additional Information</h3>
+                                <p>For additional information about our privacy
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+              </article>
+            </div>
+            <img width="90px" height="100px" style="filter: invert(100%);" src="empty-circle-svgrepo-com.svg" alt="circle-empty">
+            <div class="custom-scroll-box">
+              <article class="custom-box-content">
+                  <div class="cookie-policy">
+                      <h2>Cookie Policy</h2><br>
+                      <p>This Cookie Policy explains how we use cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them.</p>
+                      
+                      <h3>What are cookies?</h3>
+                      <p>Cookies are small text files that are stored on your computer or mobile device when you visit a website. They are widely used to make websites work or to work more efficiently, as well as to provide reporting information and help us understand how our website is being used.</p>
+                      
+                      <h3>How do we use cookies?</h3>
+                      <p>We use cookies to:</p>
+                      <ul>
+                        <li>Recognize you when you visit our website.</li>
+                        <li>Remember your preferences.</li>
+                        <li>Track your use of our website.</li>
+                        <li>Improve the performance of our website.</li>
+                      </ul>
+                      
+                      <h3>What types of cookies do we use?</h3>
+                      <p>We use both session and persistent cookies on our website. Session cookies are temporary cookies that are erased when you close your browser, while persistent cookies remain on your computer or mobile device until you delete them manually.</p>
+                      
+                      <h3>How to control cookies?</h3>
+                      <p>You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work.</p>
+                      
+                      
+                    </div>
+              </article>
+            </div>
+            
+           
+
+
+
+      </div>
+      <br><h2 > Regular Hours</h2>
+      <div class="table" style="font-size: 17px;">
+        
+        <div class="row">
+          <div class="cell">Monday</div>
+          <div class="cell">9AM-7PM</div>
+         
+        </div>
+        <div class="row">
+            <div class="cell">Tuesday</div>
+            <div class="cell">9AM - 7PM</div>
+      
+          </div>
+          <div class="row">
+            <div class="cell">Wednesday</div>
+            <div class="cell">9AM - 7PM</div>
+            
+          </div>
+          <div class="row">
+            <div class="cell">Thursday</div>
+            <div class="cell">9AM-7PM</div>
+            
+          </div>
+          <div class="row">
+            <div class="cell">Friday</div>
+            <div class="cell">3PM-7PM</div>
+           
+          </div>
+          <div class="row">
+            <div class="cell">Saturday</div>
+            <div class="cell">Varies: Reg: 8AM-7PM</div>
+    
+          </div>
+          <div class="row">
+            <div class="cell">Sunday</div>
+            <div class="cell">Varies: Reg: 8AM-7PM</div>
+    
+          </div>
+          
+          
+        <!-- Add more rows and cells as needed -->
+      </div><br>

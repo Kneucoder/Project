@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PROJECT - EsSAT</title>
+    <link rel="stylesheet" href="styles-pr.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body style="scroll-behavior: smooth; overflow-x: hidden; background-color: black;">
+<header>
+    <div class="container">
+        <img class="rotating-svg" width="50px" height="50px" viewBox = "0 0 100 100" style="filter: invert(100%) sepia(5%) hue-rotate(25deg) saturate(10000%); margin-left: 10px; margin-right: 10px; z-index: 3; position: absolute; left: 0; display: flex;  " src="circle-svgrepo-com.svg" alt="circle-empty">
+        <img width="50px" height="50px" viewBox = "0 0 100 100" style="filter: invert(10%) ; margin-left: 10px; margin-right: 10px; z-index: 3; position: absolute; left: 0; display: flex; " src="empty-circle-svgrepo-com.svg" alt="circle-empty">
+        <h1 class= "title" ><span style="text-shadow: 0 0 10px rgb(128, 128, 128);">Es</span><span style="text-shadow: 0 0 10px rgb(238, 255, 0); color:rgb(234, 255, 0); opacity: .9;  " class="pulsating-light"> SAT </span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li> <!--adding experience here to would also be good inshallah-->
+                <li><a href="about.html">ABOUT</a></li> <!--visions, values, experience+ inshallah-->
+                <li><a href="join.html">SERVICES</a></li> <!--This should include the contact form and what else from the contact page inshallah-->
+                <li><a href="run.html">TEAM</a></li>
+                <li><a href="rules.html">POLICY</a></li>
+                <!-- Add other navigation links with their respective section IDs -->
+            </ul>      
+        </nav>
+    </div>
+    
+    <div class="roll-out">
+        <div class="scroll-bar" id="scroll-bar"></div>
+      </div>
+</header>
+<section>
+    <style>
+        .background-video {
+          position: absolute;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+      <video class="background-video" autoplay  muted playsinline id="BgVideo" playbackRate="1.0"> <source src="bdc2-e338-4a33-91d0-39f37df250d6.mp4" type="video/mp4" > This video is not supported on your website</video>
+      <script>
+          document.addEventListener('DOMContentLoaded', function() { var video = document.getElementById('BgVideo'); if(video) { video.addEventListener('canplay', function() { video.playbackRate = 1.09; }); } else { console.error('Video element not found'); } });
+      </script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var video = document.getElementById('BgVideo');
+                
+                video.addEventListener('ended', function() {
+                    // Pause the video
+                    video.pause();
+                    
+                    // Set a delay (in milliseconds) before restarting the video
+                    setTimeout(function() {
+                        // Resume playback
+                        video.play();
+                    }, 2000); // 5000 milliseconds = 5 seconds delay
+                });
+            });
+        </script>
+<main>
+    <br><h2 style="color: azure; font-family: monospace;" data-aos="fade-up"> Call or REACH OUT THROUGH EMAIL/Message for Quotes & Packages. </h2><br>
+
+
+  <form
+action="https://formspree.io/f/xnqelbvd"
+method="POST"
+>
+<label>
+Email:
+<input type="email" name="email" required>
+</label>
+<label>
+Your message:
+<textarea name="message"></textarea>
+</label>
+<!-- your other form fields go here -->
+<button type="submit" style="color: black;">Send</button>
+</form>
+<br><h2 class="replacing" style="background-color: rgba(255, 255, 255, .7); Color: Black;padding: 20px; border-radius: 20%; margin:20px;" data-aos="fade-up">About Our Team</h2>
+<div class="team-container" >
+<div class="team-member" data-aos="fade-up">
+    <h2>Tariq Essat</h2>
+    <p>Founder & Head of Organization</p>
+    <p>Tariq Essat will be participating in operations as a tutor, coach, facilitator and director. A statement written by a high school teacher about Tariq (in senior year) states "Empathy: Tariq helps out struggling students and takes it upon himself to make the classroom feel like an inviting space for everyone. He is a friend to those who need one and is a peacemaker in our community." His education encompasses both public and private high school settings.<br> Tariq has experience working approximately 1.5yrs in school improvement areas for chicago public schools. In additon he's worked as an after school childcare coordinator. To learn more about about his experience or set up an appointment he may be contacted through email at pulsargigw@gmail.com. For concerns please reach out to (773)-413-9774.</p>
+</div>
+<div class="team-member" data-aos="fade-up">
+    <h2>Khalid</h2>
+    <p>Supporting Member</p>
+    <p>Khalid will be participating in operations as a tutor and additional optional operations. Khalid is a compassionate and empathetic individual who brings joy and positivity to our team. With a natural inclination towards supporting, he fosters a nurturing environment in feeling valued and heard. His genuine kindness and willingness to lend a helping hand make him an integral part of our team, contributing not only to a critical aspect of our organization but also to the well-being and intellectuality of our team. <br><br><br> Impressively adaptable, Khalid adjusted to accomodate a new situation, contributing to our teams's flexibility and responsiveness. Additionally, Khalid may be reached for questions and concerns. Please send a message including email and concern in the box above. </p>
+</div>
+<div class="team-member" data-aos="fade-up">
+  <h2>Ali</h2>
+  <p>Supporting Member</p>
+  <p>Ali will be participating in operations actively in operational supports of networking connections and a vital contributor to experience in Anatomy&Physiology. Ali is able to aid in supporting the health & fitness aspects of this team and its students. A respectable individual who encourages goodness and positivity to our team. With his understanding in business. His willingness to share beneficial suggestions and contribute to this teams effort makes him a striving individual on our team. When the case comes down to business Ali seems to be all ready to take some extent of initiation. <br><br><br> For more information about Ali and his experience, we can attempt to get you in touch. Please send a message including email and concern in the box above. </p>
+</div>
+<div class="team-member" data-aos="fade-up">
+    <h2>Potential Team Members </h2>
+    <p>Are to be possibly be written at a later date </p>
+    <p></p>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<div class="table" style="font-size: 17px;" data-aos="fade-up">
+
+    <div class="row">
+      <div class="cell">Monday</div>
+      <div class="cell">9AM-7PM</div>
+     
+    </div>
+    <div class="row">
+        <div class="cell">Tuesday</div>
+        <div class="cell">9AM - 7PM</div>
+    
+      </div>
+      <div class="row">
+        <div class="cell">Wednesday</div>
+        <div class="cell">9AM - 7PM</div>
+        
+      </div>
+      <div class="row">
+        <div class="cell">Thursday</div>
+        <div class="cell">9AM-7PM</div>
+        
+      </div>
+      <div class="row">
+        <div class="cell">Friday</div>
+        <div class="cell">3PM-7PM</div>
+       
+      </div>
+      <div class="row">
+        <div class="cell">Saturday</div>
+        <div class="cell">Varies: Reg: 8AM-7PM</div>
+    
+      </div>
+      <div class="row">
+        <div class="cell">Sunday</div>
+        <div class="cell">Varies: Reg: 8AM-7PM</div>
+    
+      </div>
+    </section>
+<!-- Add more rows and cells as needed -->
+</div><br>
+        
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        
+      
+        box-sizing: content-box; /* Ensure padding is included in the width */
+    }
+    blockquote {
+       
+        width: auto; /* Adjust the initial width as needed */
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 12px;
+        line-height: 1.6;
+        background-color: rgb(0, 0, 0);
+        border-left: 10px solid rgb(0, 0, 0);
+        word-wrap: break-word;
+        font-family: "Menlo";
+        color: white;
+    }
+</style> 
+     <div class="container">
+        <blockquote> <center>This program offers high expectations to improve student intellectual wellness. The expectation for each student includes striving to achieve perfection through ones best authentic efforts during each alloted session. </center> 
+            <div class="animated-text">
+                This is <span></span>
+            </div></blockquote>
+    </div>
+    </section>
+        </section>
+<footer>
+    <div class="circle-container">
+    <div class="thin-circle"></div>
+    <p class= "text"> EsSAT</p>
+    <p class="text-container"> Pr0ject</p>
+    </div>
+    <br><br><br><br><br><br>
+
+    <center><p class="centered-text">
+    <br> <li><a href="Home.html">Home</a></li>
+    <br> <li><a href="mission.html">Mission+</a></li> <!--visions, values, experience+ inshallah-->
+    <br> <li><a href="services.html">Services</a></li> <!--This should include the contact form and what else from the contact page inshallah-->
+    <br> <li><a href="team.html">Team</a></li>
+    <br> <li><a href="policy.html">Policy</a></li><br>
+    Credit to "DarkCode" for aid in the animation. This work is under owner copyrights.
+</p><p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:20px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:20px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> </center>
+
+</footer>
