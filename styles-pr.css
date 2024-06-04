@@ -1,0 +1,1122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    box-sizing: border-box;
+    width: 100% auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.logo-container {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it circular */
+    background-color: black; /* Change color as needed */
+  }
+
+.rotating-svg {
+    animation: rotate 4s linear infinite; /* Apply the rotate animation */
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg); /* Start the rotation from 0 degrees */
+    }
+    to {
+      transform: rotate(360deg); /* Rotate the SVG element to 360 degrees */
+    }
+  }
+  
+  .title-container {
+    margin-right: auto;
+  }
+.title {
+    
+    color: rgb(241, 241, 241) ; /* Make the text transparent */
+    font-size: 60px; /* Adjust font size as needed */
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: flex-start; /* Center the text horizontally */
+    /* Apply a box-shadow to create a fade effect */
+    width: 850px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    transform: translatex(0%);
+    z-index: 2;
+    position: relative;
+    margin-left: 60px;
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 900px) {
+    .title {
+      display: none; /* Hide the title on smaller screens */
+    }
+  }
+
+  /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #333; 
+
+}
+
+.cookie-consent-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
+  
+  #accept-cookies-btn {
+    background-color: #8BA;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+.container {
+    display: flex;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #000000;
+    color: rgb(87, 87, 87);
+    text-align: end;
+    border-top: 1px solid rgb(0, 0, 0);
+    
+    display: flex;
+    white-space: nowrap;
+    overflow: visible;
+    width: 100%;
+    text-overflow: scroll;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+      min-height: 15%;
+      max-height: 25%;
+    transition: height 0.3s ease;
+}
+
+header h1 {
+    font-size: 48px;
+    display: flex;
+
+    text-overflow: scroll;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+
+}
+
+header p {
+    font-size: 18px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0;
+    
+   
+    
+   
+    
+    
+}
+header h2 {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    width: 100%;
+    min-height: auto;
+    text-overflow: scroll;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 350px auto;
+    height: 150px auto;
+    background-color: #ffffff; /* Background color of the box */
+    border: 2px solid #0c150c; /* Black outline */
+    border-radius: 30%; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Box shadow for depth */
+    padding: 20px; /* Spacing inside the box */
+    margin: 50px; /* Margin around the box */
+    text-align: center;
+    display: grid;
+    font-family: "Font-Awesome";
+
+}
+
+nav {
+    display: flex;
+     /* Allow items to wrap onto multiple lines */
+    justify-content: right;
+    align-items: right; /* Center items horizontally */
+    text-align: right;
+}
+.navbar {
+
+    justify-content: right;
+    align-items: right;
+  }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    margin-left: 60px;
+
+}
+
+nav ul li {
+    right: 0;
+    margin: 0 15px;
+    justify-content: right;
+    align-items: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: right;
+}
+
+ /* Media query for smaller screens */
+@media screen and (max-width: 200px) {
+    nav ul li {
+      flex-direction: right; /* Arrange items vertically on smaller screens */
+      align-items: right; /* Center items horizontally on smaller screens */
+    }
+}
+@media screen and (max-width: 500px) {
+    nav ul li a {
+      font-size: 11px; /* Adjust as needed */
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    navbar ul li {
+      display: none; /* Hide the menu items by default on small screens */
+    }
+  
+    nav ul li a {
+      display: block;
+    }
+}
+
+nav ul li a::before {
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust transparency as needed */
+    border-radius: 50%; /* Make it circular */
+    transform: scale(0); /* Initially scale to 0 */
+    transition: transform 0.3s ease; /* Add transition effect */
+    transition: .2s linear;
+    color: #fff;
+}
+
+nav ul li a:hover::before {
+    color: #ffcc00;
+    transform: scale(0.2); /* Scale it up on hover */
+}
+
+.nav ul li a:hover{
+    color: #000;
+}
+section {
+    display: flex; /* Hide all sections by default */
+    color: #ffcc00;
+}
+
+#text-container {
+    font-size: 94px;
+  }
+  
+  #text-container span {
+    opacity: 0;
+    animation: fade-in .3s ease-in-out;
+  }
+  
+  .gradient-text {
+    background-image: linear-gradient(to right, white, yellow);
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    color: transparent; /* Hide the original text */
+  }
+  .pulsating-light {
+    color: #000000;
+    text-shadow: 0 0 0 rgb(255, 204, 0);
+    animation: pulse 2s infinite alternate;
+  }
+  @keyframes pulse {
+    from {
+        text-shadow: 0 0 0 rgba(255, 204, 0, 0.7); /* Start with no shadow */
+    }
+    to {
+        text-shadow: 0 0 20px rgb(255, 242, 0); /* End with a larger shadow */
+    }
+    
+}
+#searchInput {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffffff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.flexbox-item {
+  width: 150px;
+  border-radius: 50%;
+  margin: 40px;
+  border: 2px solid rgb(193, 177, 3);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.flexbox-item-1{
+  min-height: 150px;
+  flex-shrink: 0;
+  background-image: url(calendar-svgrepo-com.jpg);
+  background-size: cover;
+  background-position: top calc(75%-20px);
+  text-shadow: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+.flexbox-item-2 {
+  min-height: 150px;
+  flex-shrink: 0;
+  background-image: url(school-svgrepo-com.jpg);
+  background-size: cover;
+  background-position: top;
+  cursor: pointer;
+}
+.flexbox-item-3{
+  min-height: 150px;
+  flex-shrink: 0;
+  background-image: url(question-and-answer-svgrepo-com.jpg);
+  background-size: cover;
+  background-position: top calc(75%-20px); 
+  cursor: pointer;
+}
+.flexbox-item-4 {
+  min-height: 150px;
+  flex-shrink: 0;
+  background-image: url(writing-svgrepo-com.jpg);
+  background-size: cover;
+  background-position: top calc(75%-20px);
+  cursor: pointer;
+}
+.additional-text{
+  color: transparent;
+  display: none;
+  
+}
+.additional-text:hover:after{
+  display: inline;
+}
+
+.flexbox-item-1:hover {
+  display: inline;
+  width: 40%;
+  height: 30%;
+  backdrop-filter: blur(90%);
+ transition: opacity 0.3s ease-in-out;
+ border: 4px solid #000;
+ opacity: 0.9;
+
+}
+.flexbox-item-1:hover .additional-text {
+  color: rgb(255, 0, 0); 
+  display: inline;
+  font-weight: bold;
+}
+
+.flexbox-item-2:hover {
+  display: inline;
+  width: 40%;
+  height: 30%;
+  backdrop-filter: blur(90%);
+ transition: opacity 0.3s ease-in-out;
+ border: 4px solid #000;
+ opacity: 0.9;
+
+}
+.flexbox-item-2:hover .additional-text {
+  color: rgb(255, 0, 0); 
+  display: inline;
+  font-weight: bold;
+}
+
+.flexbox-item-3:hover {
+  display: inline;
+  width: 40%;
+  height: 30%;
+  backdrop-filter: blur(90%);
+ transition: opacity 0.3s ease-in-out;
+ border: 4px solid #000;
+ opacity: 0.9;
+
+}
+.flexbox-item-3:hover .additional-text {
+  color: rgb(255, 0, 0); 
+  display: inline;
+  font-weight: bold;
+}
+
+.flexbox-item-4:hover {
+  display: inline;
+  width: 40%;
+  height: 30%;
+  backdrop-filter: blur(90%);
+ transition: opacity 0.3s ease-in-out;
+ border: 4px solid #000;
+ opacity: 0.9;
+
+}
+.flexbox-item-4:hover .additional-text {
+  color: rgb(255, 0, 0); 
+  display: inline;
+  font-weight: bold;
+}
+
+.highlight {
+  opacity: 0; /* Initially hide the words */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+.highlight.active {
+  opacity: 1; /* Show active words */
+}
+.flexbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.flexbox-2nd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+
+.flexbox-box {
+  border: 2px solid rgb(227, 231, 10);
+  background-color:#ddd6d6;
+  box-shadow: 0 0 0 2px rgb(214, 211, 0), 0 0 0 4px white;
+}
+.flexbox-box-0 {
+  min-height: 18px;
+  width: 90%;
+  background-image: url(debby-hudson-asviIGR3CPE-unsplash.jpg);
+  background-size: cover; /* Ensure the background image covers the entire body */
+  background-position: center; /* Center the background image */
+      /* Add other styles for the body as needed */
+  filter: grayscale(50%);
+  opacity: 0.9;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  border:#000;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  margin-left: 40px;
+  
+}
+.text-container {
+  filter: none;
+  text-shadow: 2px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  font-family: 'Courier New', Courier;
+  opacity: .9;
+  font-weight: bold;
+}
+.change-text {
+  font-size: 20px;
+  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.team-member h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.team-member p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.team-member p:last-child {
+  margin-bottom: 0;
+}
+
+/* Contact Form Styles */
+#contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contact-form div {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+#contact-form textarea {
+  height: 150px;
+}
+
+#contact-form button[type="submit"] {
+  background-color: rgb(202, 197, 48); /* Google Green */
+  color: #eccb0e;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #6D7;
+}
+
+/* Basic form styling */
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: bold;
+  color: #b39e00;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #ff9900;
+  color: #f1f10f;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: #000;
+}
+
+input[type="submit"]:hover {
+  background-color: #b39e00;
+}
+/* policy Styles */
+/* Box Styles */
+/* Box Styles */
+.custom-scroll-box {
+  width: 300px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  overflow: auto;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove default outline */
+  margin: 0 auto; /* Center horizontally by default */
+  padding: 20px;
+}
+
+.custom-box-content {
+  padding: 20px;
+  text-align: left;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  .custom-scroll-box {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center horizontally */
+    margin-bottom: 50px; /* Add space between stacked boxes */
+    margin-top: 20px;
+  }
+}
+.floating-box {
+  width: 350px auto;
+  height: 150px auto;
+  background-color: #ffffff; /* Background color of the box */
+  border: 2px solid #0c150c; /* Black outline */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Box shadow for depth */
+  padding: 0px; /* Spacing inside the box */
+  margin: 0px; /* Margin around the box */
+  text-align: center;
+  overflow: auto;
+  display: grid;
+  font-family: "Font-Awesome";
+}
+
+.outlined-text {
+  color: rgb(94, 157, 136); /* Green text color */
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  color:rgba(0, 0, 0, 0.7)
+}
+
+
+/* animated text */
+.animated-text{
+  font-size: 24px;
+  font-weight: 600;
+  min-width: 280px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.animated-text span{
+  position: relative;
+}
+
+.animated-text span::before{
+  content: "Project - EsSAT";
+  color: rgb(255, 255, 255);
+  animation: words 20s infinite;
+}
+
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 40px);
+  height: 120%;
+  background-color: black;
+  opacity: 1;
+  border-left: 2px solid rgb(201, 186, 52);
+  right: -7px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+      border-left: 2px solid #00000000;
+  }
+}
+
+@keyframes words {
+  0%, 20%{
+      content: a developing program for student tutoring  and counseling between the grade level of 3rd to 9th grade
+  }
+  21%, 40%{
+      content: a support and aid in school studies and extra curricular activities
+  }
+  41%, 60%{
+      content: availble to additional grade levels on a case-to-case basis
+  }
+  61%, 80%{
+      content: looking forward to learning about each student and how this program (god willing) help motivate student to strive in academic endeavors
+  }
+  81%, 100%{
+      content: a organination that wants to value your efforts and we value yours
+  }
+}
+  
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 4px;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%{
+      width: calc(100% + 12px)
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Montserrat', sans-serif;
+background-color: #f6f6f6;
+color: #000000;
+}
+
+.container p {
+font-size: 16px;
+padding: 20px;
+font-weight: bold;
+letter-spacing: 0.1rem;
+text-align: center;
+overflow: hidden;
+}
+.container p span.typed-text {
+font-weight: 900;
+color: rgb(255, 255, 255);
+text-shadow: 
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000; /* Set multiple shadows to create an outline effect */
+}
+.container p span.cursor {
+display: inline-block;
+background-color: rgb(255, 255, 255);
+margin-left: 0.1rem;
+width: 3px;
+animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+animation: none;
+}
+@keyframes blink {
+0%  { background-color: #ccc; }
+49% { background-color: #ccc; }
+50% { background-color: transparent; }
+99% { background-color: transparent; }
+100%  { background-color: #ccc; }
+}
+footer {
+  background-color:rgb(0, 0, 0);
+  color: rgb(217, 227, 14);
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+.centered-text {
+  display: inline-block;
+  color: rgb(226, 223, 33);
+  font-size: 15px;
+  
+}
+
+.thin-circle {
+  width: 100px; /* Adjust the width and height to change the size of the circle */
+  height: 100px;
+  border-radius: 50%;
+  margin-left: -150px;
+  margin-top: 50px;
+  border:2px solid transparent;
+  box-shadow: 0 0 0 2px rgb(215, 215, 8), 0 0 0 4px white;
+  position:absolute;
+  display: inline-block;
+}
+.text {
+  flex-grow: 1;
+  color: transparent;
+  background: linear-gradient(to right, white, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Arial, sans-serif;
+  font-size: 60px;
+  text-align: center;
+  transform: translateX(-40px);
+  text-align: center;
+  margin-top: 65px;
+  display: inline-block;
+  position: absolute;
+
+  
+}
+
+/* Mission code */
+
+.a-box {
+  width: 400px auto;
+  height: 150px auto;
+  background-color: rgba(255, 255, 255, 0.6); /* Background color of the box */
+  border: 2px solid #0c150c; /* Black outline */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Box shadow for depth */
+  padding: 40px; /* Spacing inside the box */
+  margin: 20px; /* Margin around the box */
+  text-align: center;
+  overflow: auto;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+  transition: background-color 0.5s ease;
+  backdrop-filter: blur(15px); /* Blur the background */
+  font-size: 20px;
+  
+}
+.a-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px(0, 0, 0, 0.3);
+  background-color: #000000;
+  color: white;
+  transition: ease-in-out 0.5s ;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+.new-sizing-container {
+  width: auto;
+  height: 150px auto;
+  display: flex;
+  background-color: #000000; /* Background color of the box */
+  border: 2px solid #ffffff; /* Black outline */
+  border-radius: 3px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Box shadow for depth */
+  padding: 40px; /* Spacing inside the box */
+  margin: 20px; /* Margin around the box */
+  overflow: auto;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+  transition: ease-in-out 0.5s;
+  font-family: monospace;
+  font-size: 24px;
+  
+}
+.new-sizing-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px(0, 0, 0, 0.3);
+}
+
+
+/* Services Content Page */
+.my-special-box {
+  width: 31%;
+  height: 40%;
+  background-color: rgb(255, 255, 255, 0.3);
+  border: 2px solid rgb(235, 228, 26);
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-left: 20px;
+  overflow: hidden;
+  max-height: fit-content;
+  position: relative;
+  backdrop-filter: blur(10px); /* Blur the background */
+}
+.my-special-box a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit the color from the parent */
+}
+
+
+.my-special-box:hover {
+  background-color: rgb(222, 182, 36);
+  transform: translateY(-10px);
+  box-shadow: 0 1px 1px(0, 0, 0, 0.5);
+ 
+}
+@keyframes gradientAnimation {
+  0% { background-position: 0% 0%; } /* Initial position */
+  100% { background-position: 0% 100%; } /* Final position */
+}
+.my-special-box:hover {
+  /* Set the gradient background */
+  background: linear-gradient(to bottom, #ffffff, rgb(219, 219, 11), #000000);
+  
+  /* Set background size and repeat */
+  background-size: 100% 200%; /* Double the height */
+  background-repeat: no-repeat;
+  
+  /* Enable animation and define duration, timing function, and iteration count */
+  animation: gradientAnimation 3s ease infinite alternate; /* Adjust duration as needed */
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150%;
+  font-family: 'Courier New';
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  
+}
+
+.my-special-microcopy {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.my-special-icon::before {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+  font-family: "Font Awesome";
+  font-size: 50px;
+ 
+ 
+}
+
+.my-special-icon:after {
+  font-family: "Font Awesome";
+  content: '\2B55'; /* Unicode character for check mark icon in Font Awesome */
+  color: rgb(254, 254, 254);
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.my-special-box:hover .my-special-icon::before {
+  width: 40px;
+  height: 40px;
+}
+
+.my-special-box:hover .my-special-icon:after {
+  display: block;
+  content: "\2713";
+  
+}
+
+.myotherbackground-container {
+  background-image: url('pexels-pixabay-159213.jpg'); /* Set background image */
+  background-position: center;
+  top: 0;
+  left: 0;
+  height: 150vh; /* Adjust height as needed */
+  background-size: cover; background-repeat: no-repeat; background-position: center center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: scroll;
+  box-shadow: 0 5px 15px(0, 0, 0, 0.3);
+  border: 2px solid black;
+}
+
+.myotherbox-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+
+
+.styled-box {
+  background-color: #f5f5f5; /* Light gray background */
+  border: 1px solid #ddd; /* Thin light gray border */
+  padding: 15px; /* Padding around the text */
+  margin-bottom: 15px; /* Add some space below the box */
+  width: 80%;
+  border: 2px solid rgb(228, 225, 29);
+  background-color:#ddd6d6;
+  box-shadow: 0 0 0 1px rgb(0, 0, 0), 0 0 0 2px white;
+  align-items: center;
+  justify-content: flex-end;
+
+
+}
+
+.styled-box p {
+  font-family: Georgia, serif; /* Serif font */
+  font-size: 16px; /* Font size for body text */
+  color: #333; /* Dark gray text color */
+  width: 90%;
+  margin: 20px;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.team-member {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.team-member h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.team-member p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.team-member p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* image-box  in values section*/
+.image-box {
+  background-color: #fff; /* White background */
+  padding: 20px; /* Inner padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Fancy Box */
+.fancy-box {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Appealing Design */
+.appealing-box {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+}
+
+.appealing-box:hover {
+  transform: translateY(-5px);
+}
+
+.appealing-box .box {
+  flex: 1;
+  margin-right:10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.replacing {
+  text-align: center;
+}
+
+
+
+
